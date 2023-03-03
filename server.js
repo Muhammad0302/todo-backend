@@ -21,9 +21,4 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT;
 
-app.listen(
-	PORT,
-	"api.aemsig.com",
-	() => console.log("Server running at http://api.aemsig.com:80")
-	// console.log(`Server is Running on Port ${PORT}`)
-);
+app.listen(PORT, console.log(`Server is Running on Port ${PORT}`));
